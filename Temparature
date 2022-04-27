@@ -1,0 +1,21 @@
+#include<stdio.h>
+void check(int);
+int main()
+{
+    int btemp;
+    char cold[5];
+    printf("enter bodytemp and cold condition");
+    scanf("%d%s",&btemp,cold);
+    calculate (btemp,cold);
+}
+void calculate(int btemp,char cold[])
+{
+    if((btemp>99)&&(cold="true"))
+    printf("send to covid 19 centre");
+    else if((btemp>99)&&(cold="false"))
+    printf("send to qurantine centre");
+    else if((btemp<99)&&(cold="true"))
+    printf("seperate work place");
+    else if((btemp<99)&&(cold="false"))
+    printf("regular place");
+}
